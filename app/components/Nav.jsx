@@ -24,7 +24,7 @@ var Nav = React.createClass({
       <div className="top-bar">
         <div className="top-bar-left">
           <ul className="menu">
-            <li className="menu-text">OW Competitive Tracker</li>
+            <li className="menu-text">OWCT</li>
             <li>
               <IndexLink to="/" activeClassName="active" activeStyle={{ fontWeight: 'bold' }}>Get Competitive</IndexLink>
             </li>

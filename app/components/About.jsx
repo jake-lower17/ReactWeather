@@ -10,7 +10,10 @@ var React = require('react');
 
 var About = (props) => {
   return (
-    <h2>About Component</h2>
+    <div>
+      <h1 className="text-centered">About OWCT</h1>
+      <p>Little App to track out teams competitive scores.</p>
+    </div>
   );
 };
 
