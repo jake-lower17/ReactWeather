@@ -10,17 +10,17 @@ module.exports = {
   getTemp: function (location) {
     var encodedLocation = encodeURIComponent(location);
     //var requestUrl = `${OPEN_WEATHER_MAP_URL}&q=${encodedLocation}`;
-    var requestUrl = `${OPEN_WEATHER_MAP_URL}${encodedLocation}/profile`;
+    var requestUrl = `${OPEN_WEATHER_MAP_URL}${location}/profile`;
     return axios.get(requestUrl).then(function (res) {
-      if (res.data.cod && res.data.message) {
-        throw new Error('Unable to fetch weather.');
+      if (res.data.error) {
+        throw new Error(res.data.error);
       }else {
         //return res.data.main.temp;
+        debugger;
         return res.data.data.competitive.rank;
       }
     }, function (res) {
-      
-      throw new Error('Unable to fetch weather.');
+      throw new Error('Unable to score.');
     });
   }
 };
