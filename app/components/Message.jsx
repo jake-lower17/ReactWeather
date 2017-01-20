@@ -14,7 +14,7 @@ var React = require('react');
 var Message = ({ temp, location }) => {
   return (
     <div>
-      <h3 className="text-center">{location} is {temp}</h3>
+      <h3 className="text-center">{location}: {temp}</h3>
     </div>
   );
 };
