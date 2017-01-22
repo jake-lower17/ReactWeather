@@ -4,7 +4,12 @@ var { Link, IndexLink } = require('react-router');
 var Nav = React.createClass({
   onSearch: function (e) {
     e.preventDefault();
-    alert('Not yet wired up');
+    var navSearch = this.refs.navSearch.value;
+    var encodedNavSearch = encodeURIComponent(navSearch);
+    if (navSearch.length > 0) {
+      this.refs.navSearch.value = '';
+      window.location.hash = '#/?psn=' + encodedNavSearch;
+    }
   },
 
   render: function () {
@@ -34,7 +39,7 @@ var Nav = React.createClass({
           <form onSubmit={this.onSearch}>
             <ul className="menu">
               <li>
-                <input type="search" placeholder="Search by PSN"/>
+                <input type="search" ref="navSearch" placeholder="Search by PSN"/>
               </li>
               <li>
                 <input type="submit" className="button" value="Search PSN"/>

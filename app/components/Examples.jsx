@@ -15,9 +15,9 @@ var Examples = (props) => {
       <h1 className="text-center page-title">Examples!!</h1>
       <p>Here are a few examples</p>
       <ol>
-        <li><Link to="/?location=snake187eh">snake187eh</Link></li>
-        <li><Link to="/?location=UnsocialRock">UnsocialRock</Link></li>
-        <li><Link to="/?location=lower7">lower7</Link></li>
+        <li><Link to="/?psn=snake187eh">snake187eh</Link></li>
+        <li><Link to="/?psn=UnsocialRock">UnsocialRock</Link></li>
+        <li><Link to="/?psn=lower7">lower7</Link></li>
       </ol>
     </div>
   );
