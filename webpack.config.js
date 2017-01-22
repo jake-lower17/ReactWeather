@@ -31,7 +31,7 @@ module.exports = {
       Message: 'app/components/Message.jsx',
       openWeatherMap: 'app/api/openWeatherMap.jsx',
       ErrorModal: 'app/components/ErrorModal.jsx',
-      applicationsStyles: 'app/styles/app.css'
+      applicationsStyles: 'app/styles/app.scss'
     },
     extensions: [
       '', '.js', '.jsx'
