@@ -40,7 +40,7 @@ var Nav = React.createClass({
           <form onSubmit={this.onSearch}>
             <ul className="menu">
               <li>
-                <input type="search" placeholder="Search PSN"/>
+                <input type="search" placeholder="Search by PSN"/>
               </li>
               <li>
                 <input type="submit" className="button" value="Search PSN"/>

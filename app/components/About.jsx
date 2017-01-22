@@ -11,7 +11,7 @@ var React = require('react');
 var About = (props) => {
   return (
     <div>
-      <h1 className="text-centered">About OWCT</h1>
+      <h1 className="text-centered page-title">About OWCT</h1>
       <p>Little App to track out teams competitive scores.</p>
     </div>
   );
