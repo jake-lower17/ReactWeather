@@ -16,7 +16,6 @@ module.exports = {
         throw new Error(res.data.error);
       }else {
         //return res.data.main.temp;
-        debugger;
         return res.data.data.competitive.rank;
       }
     }, function (res) {

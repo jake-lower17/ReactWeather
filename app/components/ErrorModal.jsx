@@ -7,16 +7,22 @@ var ErrorModal = React.createClass({
     };
   },
 
+  propTypes: {
+    title: React.PropTypes.string,
+    message: React.PropTypes.string.isRequired
+  },
+
   componentDidMount: function () {
       var modal = new Foundation.Reveal($('#error-modal'));
       modal.open();
   },
 
   render: function () {
-    return(
+    var { title, message } = this.props;
+    return (
       <div className="reveal tiny text-center" id="error-modal" data-reveal="">
-        <h4>Error Title</h4>
-        <p>Error Message!</p>
+        <h4>{title}</h4>
+        <p>{message}</p>
         <p><button className="button hollow" data-close="">Okay</button></p>
       </div>
     );
