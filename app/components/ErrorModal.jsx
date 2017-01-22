@@ -16,7 +16,7 @@ var ErrorModal = React.createClass({
     return(
       <div className="reveal tiny text-center" id="error-modal" data-reveal="">
         <h4>Error Title</h4>
-        <p>Error Message</p>
+        <p>Error Message!</p>
         <p><button className="button hollow" data-close="">Okay</button></p>
       </div>
     );
