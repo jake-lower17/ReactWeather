@@ -5,8 +5,19 @@ var Main = require('Main');
 var Weather = require('Weather');
 var About = require('About');
 var Examples = require('Examples');
+import firebase, { firebaseRef } from 'app/firebase/';
 
-import './../playground/firebase/index'
+firebaseRef.set({
+  app: {
+    name: 'Todo AppAAAA',
+    version: '1.0.0',
+  },
+  isRunning: true,
+  user: {
+    name: 'Jake',
+    age: 27,
+  },
+});
 
 // Load foundation
 require('style!css!foundation-sites/dist/foundation.min.css');
